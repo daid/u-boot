@@ -159,20 +159,17 @@ int checkboard(void)
 	switch (hw_type) {
 	case 0x11:
 	case 0x3F:
-		/* ET1100 present, arch number of MEESC-Board */
-		gd->bd->bi_arch_number = MACH_TYPE_MEESC;
+		/* ET1100 present, MEESC-Board */
 		puts("Board: CAN-EtherCAT Gateway");
 		break;
 	case 0xFF:
-		/* no ET1100 present, arch number of EtherCAN/2-Board */
-		gd->bd->bi_arch_number = MACH_TYPE_ETHERCAN2;
+		/* no ET1100 present, EtherCAN/2-Board */
 		puts("Board: EtherCAN/2 Gateway");
 		/* switch on LED1D */
 		at91_set_pio_output(AT91_PIO_PORTB, 12, 1);
 		break;
 	default:
-		/* assume, no ET1100 present, arch number of EtherCAN/2-Board */
-		gd->bd->bi_arch_number = MACH_TYPE_ETHERCAN2;
+		/* assume, no ET1100 present, EtherCAN/2-Board */
 		printf("ERROR! Read invalid hw_type: %02X\n", hw_type);
 		puts("Board: EtherCAN/2 Gateway");
 		break;

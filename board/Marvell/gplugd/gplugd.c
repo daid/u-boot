@@ -75,8 +75,6 @@ int board_init(void)
 	struct armd1apb2_registers *apb2_regs =
 		(struct armd1apb2_registers *)ARMD1_APBC2_BASE;
 
-	/* arch number of Board */
-	gd->bd->bi_arch_number = MACH_TYPE_SHEEVAD;
 	/* adress of boot parameters */
 	gd->bd->bi_boot_params = armd1_sdram_base(0) + 0x100;
 	/* Assert PHY_RST# */

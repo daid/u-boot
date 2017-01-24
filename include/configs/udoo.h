@@ -13,9 +13,6 @@
 
 #include "imx6_spl.h"
 
-#define MACH_TYPE_UDOO		4800
-#define CONFIG_MACH_TYPE	MACH_TYPE_UDOO
-
 /* Size of malloc() pool */
 #define CONFIG_SYS_MALLOC_LEN		(2 * SZ_1M)
 

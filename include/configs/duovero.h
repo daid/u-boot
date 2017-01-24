@@ -16,8 +16,6 @@
  * High Level Configuration Options
  */
 #define CONFIG_DUOVERO
-#define MACH_TYPE_OMAP4_DUOVERO              4097    /* Until the next sync */
-#define CONFIG_MACH_TYPE                MACH_TYPE_OMAP4_DUOVERO
 
 #include <configs/ti_omap4_common.h>
 

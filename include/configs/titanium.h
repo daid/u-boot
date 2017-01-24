@@ -17,9 +17,6 @@
 
 #define CONFIG_MX6Q
 
-#define MACH_TYPE_TITANIUM		3769
-#define CONFIG_MACH_TYPE		MACH_TYPE_TITANIUM
-
 /* Size of malloc() pool */
 #define CONFIG_SYS_MALLOC_LEN		(2 * 1024 * 1024)
 

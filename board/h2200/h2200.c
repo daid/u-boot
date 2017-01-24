@@ -35,8 +35,6 @@ int board_init(void)
 	dcache_disable();
 	icache_disable();
 
-	gd->bd->bi_arch_number = MACH_TYPE_H2200;
-
 	/* adress of boot parameters */
 	gd->bd->bi_boot_params = 0xa0000100;
 

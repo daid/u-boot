@@ -18,10 +18,6 @@
 /* The first stage boot loader takes care of low level initialization. */
 #define CONFIG_SKIP_LOWLEVEL_INIT
 
-/* Set our official architecture number. */
-#define MACH_TYPE_ETHERNUT5 1971
-#define CONFIG_MACH_TYPE MACH_TYPE_ETHERNUT5
-
 /* CPU information */
 #define CONFIG_ARCH_CPU_INIT
 

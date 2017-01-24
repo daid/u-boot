@@ -15,9 +15,6 @@
 #include "imx6_spl.h"
 #endif
 
-#define MACH_TYPE_MX6SLEVK		4307
-#define CONFIG_MACH_TYPE		MACH_TYPE_MX6SLEVK
-
 /* Size of malloc() pool */
 #define CONFIG_SYS_MALLOC_LEN		(3 * SZ_1M)
 
